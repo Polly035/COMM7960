@@ -1,0 +1,415 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-banner {
+    background-image: url('image/health.jpg');
+    background-size: cover;
+    background-position:  center calc(50% - 50px);  /* Moves the image down by 10px */
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    /*box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);*/
+}
+
+/*.hero-banner:before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);  
+    z-index: -1; 
+} */
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-banner button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+/* Healthy Recipes Section */
+#recipes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;  
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    width: 300px;  
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 30px;  
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;   /* Ensures the image takes up the full width of the card */
+    height: 300px; /* Set a fixed height to make the images uniform in size */
+    object-fit: cover; /* Ensures the image covers the entire space without stretching */
+    border-radius: 8px;  /* Rounded corners for the images */
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #4CAF50;
+    font-size: 1.2rem;  
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #2196F3;
+}
+
+.card button:hover {
+    background-color: #1976D2;
+}
+
+/* Fitness Section */
+#fitness {
+    background-color: #e1f5fe;  /* Light blue background for the section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.fitness-info {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.fitness-info h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.fitness-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.fitness-info button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.fitness-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Create two equal columns */
+    gap: 30px;  /* Space between the cards */
+    padding-top: 40px;
+    max-width: 1200px;  /* Optional: Limit the container width */
+    margin: 0 auto;  /* Center the grid */
+}
+
+.category-card {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.category-card img {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.category-card h4 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.category-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.category-card button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.category-card button:hover {
+    background-color: #1976D2;
+}
+
+
+/* Mental Health Section */
+#mentalhealth {
+    background-color: #f1f8e9; /* Light background */
+    padding: 50px 20px;
+}
+
+.mental-health-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mental-health-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.mental-health-header h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.mental-health-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.mental-health-header button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.resource-links {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+.resource-links h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.resource-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-item {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;  /* Vertically aligns the icon and text */
+    gap: 15px;  /* Adds space between the icon and the text */
+    text-align: left;  /* Aligns the text to the left */
+    justify-content: flex-start;  /* Aligns everything to the left */
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.resource-item a {
+    font-size: 1.2rem;
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.resource-item a:hover {
+    color: #1976D2;
+    text-decoration: underline;
+}
+
+.resource-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.resource-item svg {
+    width: 26px; /* Adjust the width */
+    height: 26px; /* Adjust the height */
+    color: #2196F3;
+}
+
+.videos {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.videos iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.testimonials {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mental-health-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.mental-health-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.mental-health-form input,
+.mental-health-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.mental-health-form button {
+    padding: 12px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.mental-health-form button:hover {
+    background-color: #1976D2;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
